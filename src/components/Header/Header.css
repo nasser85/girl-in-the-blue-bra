@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+nav {
+    margin-bottom: '1.45rem';
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.7rem;
+}
+
+nav.front-page {
+
+}
+
+nav.interior {
+    background-color: white;
+}
+
+.home-btn {
+    margin-right: 10px;
+}
+.btn {
+    margin-left: 10px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.btn.selected {
+    color: red;
+}
+.arrow {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('arrow.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: pulse 1s infinite;
+    -webkit-animation: pulse 1s infinite;
+    -moz-animation: pulse 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    margin-left: -5px;
+  }
+  50% {
+    margin-left: 20px;
+  }
+  100% {
+    margin-left: -5px;
+  }
+}
+@-webkit-keyframes pulse {
+  0% {
+    margin-left: 0px;
+  }
+  50% {
+    margin-left: 20px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+@-moz-keyframes pulse {
+  0% {
+    margin-left: 0px;
+  }
+  50% {
+    margin-left: 20px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}

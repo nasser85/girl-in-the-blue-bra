@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Dorsa');
+.video-background {
+    background-color: red;
+}
+#myVideo {
+    position: fixed;
+    right: auto;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+@media only screen and (max-width: 540px) {
+    #myVideo {
+        right: -550px;
+    }
+}
+.video-content {
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(0,0,0,0);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px 20px 30px 20px;
+
+}
+.selection {
+    width: 16.66666%;
+    display: inline-block;
+}
+.selection img {
+    width: 100%;
+    margin: auto;
+}
+.video-overlay {
+    position: fixed;
+    z-index: 999;
+    top: 20%;
+    bottom: 40px;
+    width: 100%;
+}
+@media only screen and (max-height: 400px) {
+    .video-overlay {
+        top: 8%;
+    }
+}
+.title {
+    z-index: 9999;
+    color: white;
+    text-align: center;
+    font-family: 'Dorsa', sans-serif;
+    letter-spacing: 5px;
+    font-size: 7rem;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+.social-icons {
+    margin: auto;
+    width: 240px;
+}
+.social-icon{
+    display: inline-block;
+    margin: auto;
+    padding: 20px;
+}
+.social-icon img {
+    width: 40px;
+}
+.main-button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.main-button p {
+    margin-bottom: 0;
+
+    text-align: center;
+}
