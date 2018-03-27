@@ -7,7 +7,7 @@ body, html {
 .img1 {
     /* The image used */
     background-image: url('1.png');
-    min-height: 550px;
+    height: 550px;
     background-position: right;
 
 
@@ -27,14 +27,12 @@ body, html {
     color: white;
 }
 .img2 {
-     /* The image used */
     background-image: url('4.jpg');
     height: 500px;
     background-position: center;
 }
 
 .img3 {
-     /* The image used */
     background-image: url('3.png');
     height: 500px;
     background-position: center;
@@ -90,5 +88,10 @@ body, html {
 
     background-repeat: no-repeat;
     background-size: cover;
+}
+@media only screen and (max-device-width: 1024px) {
+  .img1, .img2, .img3 {
+    background-attachment: scroll;
+  }
 }
 
