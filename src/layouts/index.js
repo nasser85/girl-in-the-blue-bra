@@ -10,8 +10,8 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="Gatsby Default Starter"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'The Girl In the Blue Bra Film' },
+        { name: 'keywords', content: 'Egypt, Revolution, Girl, Blue Bra, Me Too, Film, Independent Film' },
       ]}
     />
     <Header />

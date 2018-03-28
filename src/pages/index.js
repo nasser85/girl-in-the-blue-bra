@@ -9,7 +9,7 @@ import Twitter from './twitter.png'
 
 const IndexPage = () => (
     <div>
-        <video autoPlay muted loop id="myVideo">
+        <video playsInline autoPlay muted loop id="myVideo">
           <source src={Video} type="video/mp4"></source>
         </video>
         <div className="video-overlay">

@@ -23,7 +23,7 @@ export default class Header extends React.Component {
   componentDidMount() {
     smoothScroll.polyfill();
     window.document.addEventListener('scroll', this.checkPage);
-    if (window.location.pathname == '/discover') {
+    if (window.location.pathname.replace(/[/]/g, '') == 'discover') {
       this.setState({frontPage: false})
     }
   }
