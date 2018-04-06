@@ -73,6 +73,9 @@
 .social-icon img {
     width: 40px;
 }
+.social-icon img:hover {
+    opacity: 0.8;
+}
 .main-button:hover {
     cursor: pointer;
     background-color: white;

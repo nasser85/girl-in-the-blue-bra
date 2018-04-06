@@ -16,7 +16,7 @@ const IndexPage = () => (
         <h1 className="title">{'THE GIRL IN'}</h1>
          <h1 className="title">{'THE BLUE BRA'}</h1>
          <div className="social-icons">
-           <div className="social-icon"><img src={Facebook} /></div>
+           <a href="https://www.facebook.com/The-Girl-In-The-Blue-Bra-1817309361920471/" target="_blank"><div className="social-icon"><img src={Facebook} /></div></a>
            <div className="social-icon"><img src={Youtube} /></div>
            <div className="social-icon"><img src={Twitter} /></div>
          </div>

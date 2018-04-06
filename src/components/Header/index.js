@@ -19,6 +19,7 @@ export default class Header extends React.Component {
     this.isInViewPort = this.isInViewPort.bind(this);
     this.checkPage = this.checkPage.bind(this);
     this.toggleLinkColor = this.toggleLinkColor.bind(this);
+    this.toFeature = this.toFeature.bind(this);
   }
   componentDidMount() {
     smoothScroll.polyfill();
@@ -47,12 +48,15 @@ export default class Header extends React.Component {
     var filmRect = window.document.getElementsByClassName('film')[0] ? window.document.getElementsByClassName('film')[0].getBoundingClientRect() : false;
     var circuitRect = window.document.getElementsByClassName('circuit')[0] ? window.document.getElementsByClassName('circuit')[0].getBoundingClientRect() : false;
     var castRect = window.document.getElementsByClassName('cast')[0] ? window.document.getElementsByClassName('cast')[0].getBoundingClientRect() : false;
+    var featureRect = window.document.getElementsByClassName('feature')[0] ? window.document.getElementsByClassName('feature')[0].getBoundingClientRect() : false;
     if (filmRect && this.isInViewPort(filmRect)) {
       this.toggleLinkColor('film');
     } else if (circuitRect && this.isInViewPort(circuitRect)) {
       this.toggleLinkColor('circuit');
     } else if (castRect && this.isInViewPort(castRect)) {
       this.toggleLinkColor('cast');
+    } else if (featureRect && this.isInViewPort(featureRect)) {
+      this.toggleLinkColor('feature');
     }
   }
   toggleNav() {
@@ -69,6 +73,9 @@ export default class Header extends React.Component {
   }
   toCast() {
     this.scrollTo('cast');
+  }
+  toFeature() {
+    this.scrollTo('feature');
   }
   renderFrontNav() {
     return (
@@ -105,6 +112,7 @@ export default class Header extends React.Component {
           <a className="film-btn btn selected" onClick={this.toFilm}>FILM</a>
           <a className="circuit-btn btn" onClick={this.toCircuit}>CIRCUIT</a>
           <a className="cast-btn btn" onClick={this.toCast}>CREW</a>
+          <a className="feature-btn btn" onClick={this.toFeature}>FEATURE</a>
         </div>
       </nav>
     )

@@ -6,15 +6,15 @@ nav {
     width: 100%;
     padding: 20px;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 1.7rem;
 }
 
 nav.front-page {
-
+    font-size: 1.7rem;
 }
 
 nav.interior {
     background-color: white;
+    font-size: 1.4rem;
 }
 
 .home-btn {
