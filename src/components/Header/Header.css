@@ -6,6 +6,7 @@ nav {
     width: 100%;
     padding: 20px;
     font-family: 'Open Sans Condensed', sans-serif;
+    z-index: 999;
 }
 
 nav.front-page {
@@ -15,6 +16,49 @@ nav.front-page {
 nav.interior {
     background-color: white;
     font-size: 1.4rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.nav-items.mobile {
+  display: block;
+}
+.nav-items.desk {
+  display:none;
+}
+.dropdown {
+  left: 0;
+  width: 100%;
+  margin-top: 15px;
+  padding: 15px 25px 0px 10px;
+  background-color: white;
+  position: absolute;
+  z-index: 99;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  display:none;
+}
+.dropdown p {
+  font-size: 1.7rem;
+}
+.dropdown.open {
+  display:block;
+}
+.fa-bars.open {
+  color:cornflowerblue;
+}
+.fa-bars:hover {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 540px) {
+    .nav-items.mobile {
+      display: none;
+    }
+    .dropdown.open {
+      display: none;
+    }
+    .nav-items.desk {
+      display:block;
+    }
 }
 
 .home-btn {

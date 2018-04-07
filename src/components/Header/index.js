@@ -20,6 +20,7 @@ export default class Header extends React.Component {
     this.checkPage = this.checkPage.bind(this);
     this.toggleLinkColor = this.toggleLinkColor.bind(this);
     this.toFeature = this.toFeature.bind(this);
+    this.toggleMobileNav = this.toggleMobileNav.bind(this);
   }
   componentDidMount() {
     smoothScroll.polyfill();
@@ -34,6 +35,7 @@ export default class Header extends React.Component {
       links[i].classList.remove('selected');
     }
     window.document.querySelector('.' + element + '-btn').classList.add('selected');
+    window.document.querySelector('.' + element + '-mobile-btn').classList.add('selected');
   }
   isInViewPort(rect) {
     var html = document.documentElement;
@@ -59,6 +61,17 @@ export default class Header extends React.Component {
       this.toggleLinkColor('feature');
     }
   }
+  toggleMobileNav() {
+    var dropDown = window.document.getElementsByClassName('dropdown')[0];
+    var hamburger = window.document.getElementsByClassName('fa-bars')[0];
+    if (dropDown.classList.contains('open')) {
+      dropDown.classList.remove('open');
+      hamburger.classList.remove('open')
+    } else {
+      dropDown.classList.add('open');
+      hamburger.classList.add('open')
+    }
+  }
   toggleNav() {
     this.setState({frontPage: !this.state.frontPage});
   }
@@ -66,16 +79,36 @@ export default class Header extends React.Component {
     window.document.querySelector('.' + element).scrollIntoView({behavior: 'smooth'});
   }
   toFilm() {
-    this.scrollTo('film');
+    var userAgent = window.navigator.userAgent;
+    if (userAgent.match(/Chrome/i) ) {
+      this.scrollTo('film');
+    } else {
+      window.document.querySelector('.img1').scrollIntoView({behavior: 'smooth'});
+    }
   }
   toCircuit() {
-    this.scrollTo('circuit');
+    var userAgent = window.navigator.userAgent;
+    if (userAgent.match(/Chrome/i) ) {
+      this.scrollTo('circuit');
+    } else {
+      window.document.querySelector('.img2').scrollIntoView({behavior: 'smooth'});
+    }
   }
   toCast() {
-    this.scrollTo('cast');
+    var userAgent = window.navigator.userAgent;
+    if (userAgent.match(/Chrome/i) ) {
+      this.scrollTo('cast');
+    } else {
+      window.document.querySelector('.img4').scrollIntoView({behavior: 'smooth'});
+    }
   }
   toFeature() {
-    this.scrollTo('feature');
+    var userAgent = window.navigator.userAgent;
+    if (userAgent.match(/Chrome/i) ) {
+      this.scrollTo('feature');
+    } else {
+      window.document.querySelector('.img3').scrollIntoView({behavior: 'smooth'});
+    }
   }
   renderFrontNav() {
     return (
@@ -97,7 +130,16 @@ export default class Header extends React.Component {
   renderInteriorNav() {
     return (
       <nav className="interior">
-        <div className="nav-items">
+        <div className="nav-items mobile">
+          <i onClick={this.toggleMobileNav} className="fas fa-bars"></i>
+        </div>
+        <div className="dropdown">
+          <p className="film-mobile-btn btn selected" onClick={this.toFilm}>FILM</p>
+          <p className="circuit-mobile-btn btn" onClick={this.toCircuit}>CIRCUIT</p>
+          <p className="cast-mobile-btn btn" onClick={this.toCast}>CREW</p>
+          <p className="feature-mobile-btn btn" onClick={this.toFeature}>FEATURE</p>
+        </div>
+        <div className="nav-items desk">
            <Link
             to="/"
             onClick={this.toggleNav}

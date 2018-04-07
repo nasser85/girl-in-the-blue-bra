@@ -16,9 +16,9 @@ const IndexPage = () => (
         <h1 className="title">{'THE GIRL IN'}</h1>
          <h1 className="title">{'THE BLUE BRA'}</h1>
          <div className="social-icons">
-           <a href="https://www.facebook.com/The-Girl-In-The-Blue-Bra-1817309361920471/" target="_blank"><div className="social-icon"><img src={Facebook} /></div></a>
-           <div className="social-icon"><img src={Youtube} /></div>
-           <div className="social-icon"><img src={Twitter} /></div>
+           <a href="https://www.facebook.com/The-Girl-In-The-Blue-Bra-1817309361920471/" target="_blank"><i className="fab fa-facebook social-icon"></i></a>
+           <a href="https://www.facebook.com/The-Girl-In-The-Blue-Bra-1817309361920471/" target="_blank"><i className="fab fa-instagram social-icon"></i></a>
+           <a href="https://www.facebook.com/The-Girl-In-The-Blue-Bra-1817309361920471/" target="_blank"><i className="fab fa-twitter social-icon"></i></a>
          </div>
         </div>
   </div>
