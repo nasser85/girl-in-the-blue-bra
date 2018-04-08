@@ -130,10 +130,24 @@ export default class Header extends React.Component {
   renderInteriorNav() {
     return (
       <nav className="interior">
+      <div className="title-header">
+      <p>THE GIRL IN THE BLUE BRA</p>
+      </div>
         <div className="nav-items mobile">
+         <Link
+              to="/"
+              onClick={this.toggleNav}
+              className="home-btn"
+              style={{
+                color: 'cornflowerblue',
+                textDecoration: 'none',
+                display: 'inline-block',
+              }}
+            >HOME</Link>
           <i onClick={this.toggleMobileNav} className="fas fa-bars"></i>
         </div>
         <div className="dropdown">
+
           <p className="film-mobile-btn btn selected" onClick={this.toFilm}>FILM</p>
           <p className="circuit-mobile-btn btn" onClick={this.toCircuit}>CIRCUIT</p>
           <p className="cast-mobile-btn btn" onClick={this.toCast}>CREW</p>

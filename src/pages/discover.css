@@ -9,9 +9,9 @@ body, html {
     background-image: url('1.jpg');
     height: 550px;
     background-position: right;
-
-
-
+}
+.mg-b-0 {
+  margin-bottom: 0;
 }
 .section-header {
     position: absolute;
@@ -81,6 +81,14 @@ body, html {
 .green {
   color:lime;
 }
+.blue {
+  color:cornflowerblue;
+}
+
+.general-text span.green:hover {
+  cursor:pointer;
+  color:red;
+}
 
 .image-container {
   display: inline-block;
@@ -126,12 +134,33 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.revolution-img {
+  margin: 0px 0px 20px 0px;
+  width: 100%;
+}
+.revolution-title {
+  text-align: center;
+  color: cornflowerblue;
+  font-size: 1.5rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.social-text{
+  text-align: center;
+}
+.casting-sites div {
+  display: inline-block;
+  width: 33.333%;
+  padding: 5% 10% 5% 10%;
+}
+.casting-sites div img {
+  width: 100%;
+  margin: auto;
+}
 @media only screen and (max-device-width: 1024px) {
   .img1, .img2, .img3, .img4 {
     background-attachment: scroll;
   }
 }
-
 
 @media only screen and (max-width: 640px) {
   .image-container {
@@ -143,10 +172,14 @@ body, html {
   .cast-photo-container img {
     width: 200px;
   }
+
 }
 @media only screen and (max-width: 400px) {
    .image-container {
       width: 100%;
+    }
+     .casting-sites div {
+     width:100%;
     }
 }
 

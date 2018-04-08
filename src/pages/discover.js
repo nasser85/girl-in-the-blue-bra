@@ -14,16 +14,29 @@ import Screenwriter from './screenwriter.jpeg'
 import LeadMan from './lead-actor.jpg'
 import LeadWoman from './Jehan.jpg'
 import Dp from './dp.jpeg'
+import Revolution from './The_Girl_In_The_Blue_Bra.jpg'
+import Backstage from './backstage-logo.png'
+import Upcast from './upcast-logo.jpg'
+import Casting from './casting-360-logo.svg'
 
 export default class SecondPage extends React.Component {
     constructor(props) {
         super(props);
         this.renderCrew = this.renderCrew.bind(this);
+        this.moveToFeature = this.moveToFeature.bind(this);
     }
     renderCrew(first, last, image, title, description) {
         return (
             <CrewCard first={first} last={last} title={title} image={image}>{description}</CrewCard>
         )
+    }
+    moveToFeature() {
+        var userAgent = window.navigator.userAgent;
+        if (userAgent.match(/Chrome/i) ) {
+          window.document.querySelector('.feature').scrollIntoView({behavior: 'smooth'});
+        } else {
+          window.document.querySelector('.img3').scrollIntoView({behavior: 'smooth'});
+        }
     }
     render() {
         const crewData = [
@@ -78,8 +91,10 @@ export default class SecondPage extends React.Component {
                 <div className="box">
                     <div className="text-container">
                         <h1 className="general-title blue">THE LATEST</h1>
-                        <p className="general-text">Currently, the short film, <em>The Girl in the Blue Bra</em>, is on the Festival Circuit.</p>
-                        <p className="general-text">The <strong>feature</strong> is in pre-production.  For more information on the feature, <span className="link"><strong>click here</strong></span>.</p>
+                        <p className="general-text"><i className="fa fa-chevron-right blue"></i> Currently, the short film, <em className="blue">The Girl in the Blue Bra</em>, is on the Festival Circuit.</p>
+                        <p className="general-text"><i className="fa fa-chevron-right blue"></i> The feature version of <em className="blue">The Girl in The Blue Bra</em> has recieved the green light!</p>
+                        <p className="general-text"><i className="fa fa-chevron-right blue"></i> There is a working script.  Some principles have signed on to the project</p>
+                        <p className="general-text"><span className="green" onClick={this.moveToFeature}>LEARN MORE <i className="fa fa-caret-right"></i></span></p>
                         <h1 className="general-title blue">LOGLINE</h1>
                         <p className="general-text">{'In the midst of the 2011 Egyptian protests, a sheltered young woman is forced out of her comfort zone and into the increasingly hostile streets of revolutionary Cairo.'}</p>
                         <h1 className="general-title blue">SYNOPSIS</h1>
@@ -135,14 +150,22 @@ export default class SecondPage extends React.Component {
                 </div>
                 <div className="box">
                     <div className="text-container">
-                        <h1 className="general-title blue">UPDATES</h1>
-                        <p className="general-text">The feature version of <em>The Girl in The Blue Bra</em> has recieved the <span className="green">GREEN LIGHT</span>!</p>
-                        <p className="general-text">There is a working script.  Some principles have signed on to the project</p>
                         <h1 className="general-title">JOIN THE REVOLUTION</h1>
-                        <p className="general-text">Become a key participant in the production of <em>The Girl in the Blue Bra</em>.</p>
-                        <p className="general-text">IN FRONT OF THE CAMERA</p>
-                        <p className="general-text">BEHIND THE CAMERA</p>
-                        <p className="general-text">FOLLOW US</p>
+                        <p className="general-text">Become a key participant in the production of <em className="blue">The Girl in the Blue Bra</em>.</p>
+                        <img className="revolution-img" src={Revolution}></img>
+                        <p className="revolution-title">We are now casting for the feature on the following sites</p>
+                        <div className="casting-sites">
+                            <div><a href="https://www.backstage.com/casting/the-girl-in-the-blue-bra-186905/" target="_blank"><img src={Backstage}></img></a></div>
+                            <div><a href="https://www.getupcast.com/" target="_blank"><img src={Upcast}></img></a></div>
+                            <div><a href="https://casting360.com" target="_blank"><img src={Casting}></img></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div className="box">
+                    <div className="text-container">
+                        <p className="social-text"><a href="https://www.facebook.com/The-Girl-In-The-Blue-Bra-1817309361920471/" target="_blank"><i className="fab fa-facebook social-icon"></i></a>
+           <a href="https://www.instagram.com/thegirlinthebluebra/" target="_blank"><i className="fab fa-instagram social-icon"></i></a>
+           <a href="https://www.facebook.com/The-Girl-In-The-Blue-Bra-1817309361920471/" target="_blank"><i className="fab fa-twitter social-icon"></i></a></p>
                     </div>
                 </div>
             </div>
