@@ -91,10 +91,7 @@ export default class SecondPage extends React.Component {
                 <div className="box">
                     <div className="text-container">
                         <h1 className="general-title blue">THE LATEST</h1>
-                        <p className="general-text"><i className="fa fa-chevron-right blue"></i> Currently, the short film, <em className="blue">The Girl in the Blue Bra</em>, is on the Festival Circuit.</p>
-                        <p className="general-text"><i className="fa fa-chevron-right blue"></i> The feature version of <em className="blue">The Girl in The Blue Bra</em> has recieved the green light!</p>
-                        <p className="general-text"><i className="fa fa-chevron-right blue"></i> There is a working script.  Some principles have signed on to the project</p>
-                        <p className="general-text"><span className="green" onClick={this.moveToFeature}>LEARN MORE <i className="fa fa-caret-right"></i></span></p>
+                        <p className="general-text">Currently, the short film, <em className="blue">The Girl in the Blue Bra</em>, is on the Festival Circuit. The feature version of <em className="blue">The Girl in The Blue Bra</em> has recieved the green light!  There is a working script.  Some principles have signed on to the project. &nbsp;&nbsp;<span className="green" onClick={this.moveToFeature}>LEARN MORE <i className="fa fa-caret-right"></i></span></p>
                         <h1 className="general-title blue">LOGLINE</h1>
                         <p className="general-text">{'In the midst of the 2011 Egyptian protests, a sheltered young woman is forced out of her comfort zone and into the increasingly hostile streets of revolutionary Cairo.'}</p>
                         <h1 className="general-title blue">SYNOPSIS</h1>
@@ -165,7 +162,7 @@ export default class SecondPage extends React.Component {
                     <div className="text-container">
                         <p className="social-text"><a href="https://www.facebook.com/The-Girl-In-The-Blue-Bra-1817309361920471/" target="_blank"><i className="fab fa-facebook social-icon"></i></a>
            <a href="https://www.instagram.com/thegirlinthebluebra/" target="_blank"><i className="fab fa-instagram social-icon"></i></a>
-           <a href="https://www.facebook.com/The-Girl-In-The-Blue-Bra-1817309361920471/" target="_blank"><i className="fab fa-twitter social-icon"></i></a></p>
+           <a href="https://twitter.com/TGITBB" target="_blank"><i className="fab fa-twitter social-icon"></i></a></p>
                     </div>
                 </div>
             </div>
