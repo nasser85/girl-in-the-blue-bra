@@ -138,6 +138,14 @@ body, html {
   margin: 0px 0px 20px 0px;
   width: 100%;
 }
+.director-pic {
+  background-image: url('The_Girl_In_The_Blue_Bra.jpg');
+  height: 300px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .revolution-title {
   text-align: center;
   color: cornflowerblue;

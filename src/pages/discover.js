@@ -148,8 +148,12 @@ export default class SecondPage extends React.Component {
                 <div className="box">
                     <div className="text-container">
                         <h1 className="general-title">JOIN THE REVOLUTION</h1>
-                        <p className="general-text">Become a key participant in the production of <em className="blue">The Girl in the Blue Bra</em>.</p>
-                        <img className="revolution-img" src={Revolution}></img>
+                        <p className="general-text mg-b-0">Become a key participant in the production of <em className="blue">The Girl in the Blue Bra</em>.</p>
+                    </div>
+                </div>
+                    <div className="director-pic"></div>
+                <div className="box">
+                    <div className="text-container">
                         <p className="revolution-title">We are now casting for the feature on the following sites</p>
                         <div className="casting-sites">
                             <div><a href="https://www.backstage.com/casting/the-girl-in-the-blue-bra-186905/" target="_blank"><img src={Backstage}></img></a></div>
