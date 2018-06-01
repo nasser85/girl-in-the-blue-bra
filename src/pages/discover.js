@@ -2,6 +2,9 @@ import React from 'react'
 import Link from 'gatsby-link'
 import './discover.css'
 import CrewCard from '../components/CrewCard'
+import Recognition from './Accolade-REcognition-logo-Gold.png'
+import AsiaAward from './Asia-South-East-Film-Festival-Award-Laurel.jpg'
+import IndieFest from './IndieFEST-Recognition-Logo-Gold.png'
 import Chicago from './chicago-feminist.jpg'
 import FirstFriday from './first-friday.jpg'
 import LAWomens from './la-womens.jpg'
@@ -104,6 +107,15 @@ export default class SecondPage extends React.Component {
                 <div className="box white">
                     <div className="text-container">
                         <h1 className="general-title space">ACCOLADES</h1>
+                        <div className="image-container">
+                            <img src={Recognition} />
+                        </div>
+                        <div className="image-container">
+                            <img src={AsiaAward} />
+                        </div>
+                        <div className="image-container">
+                            <img src={IndieFest} />
+                        </div>
                         <div className="image-container">
                             <img src={Chicago} />
                         </div>
