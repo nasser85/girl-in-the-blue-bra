@@ -21,6 +21,8 @@ import Revolution from './The_Girl_In_The_Blue_Bra.jpg'
 import Backstage from './backstage-logo.png'
 import Upcast from './upcast-logo.jpg'
 import Casting from './casting-360-logo.svg'
+import Tally from './TFF-2018-Laurels.png'
+import Delhi from './Official-Selection-Laurel.jpg'
 
 export default class SecondPage extends React.Component {
     constructor(props) {
@@ -28,9 +30,9 @@ export default class SecondPage extends React.Component {
         this.renderCrew = this.renderCrew.bind(this);
         this.moveToFeature = this.moveToFeature.bind(this);
     }
-    renderCrew(first, last, image, title, description) {
+    renderCrew(first, last, image, title, description, index) {
         return (
-            <CrewCard first={first} last={last} title={title} image={image}>{description}</CrewCard>
+            <CrewCard key={index} first={first} last={last} title={title} image={image}>{description}</CrewCard>
         )
     }
     moveToFeature() {
@@ -111,7 +113,7 @@ export default class SecondPage extends React.Component {
                             <img src={Recognition} />
                         </div>
                         <div className="image-container">
-                            <img src={AsiaAward} />
+                            <img className="circle" src={AsiaAward} />
                         </div>
                         <div className="image-container">
                             <img src={IndieFest} />
@@ -134,6 +136,12 @@ export default class SecondPage extends React.Component {
                         <div className="image-container">
                             <img src={Asia} />
                         </div>
+                        <div className="image-container">
+                            <img src={Tally} />
+                        </div>
+                        <div className="image-container">
+                            <img className="circle" src={Delhi} />
+                        </div>
 
                         <h1 className="general-title space">SCREENINGS</h1>
                         <p className="list-item"><a className="styled-link"><em>6th Delhi International Film Festival</em></a> <br/>&ndash; 12.9.17 &ndash;</p>
@@ -151,7 +159,7 @@ export default class SecondPage extends React.Component {
                 </div>
                 <div className="box">
                     <div className="text-container">
-                        {crewData.map(el=>this.renderCrew(el.first, el.last, el.image, el.title, el.description))}
+                        {crewData.map((el, index)=>this.renderCrew(el.first, el.last, el.image, el.title, el.description, index))}
                     </div>
                 </div>
                 <div className="img3">

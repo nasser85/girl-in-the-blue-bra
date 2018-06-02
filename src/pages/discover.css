@@ -164,6 +164,9 @@ body, html {
   width: 100%;
   margin: auto;
 }
+.circle {
+  border-radius: 100%;
+}
 @media only screen and (max-device-width: 1024px) {
   .img1, .img2, .img3, .img4 {
     background-attachment: scroll;

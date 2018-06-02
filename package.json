@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "girl-in-the-blue-bra-movie-site",
   "description": "Gatsby default starter",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Nasser Abouelazm",
   "dependencies": {
     "gatsby": "^1.9.236",
     "gatsby-link": "^1.6.39",
