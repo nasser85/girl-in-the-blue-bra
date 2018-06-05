@@ -42,6 +42,10 @@ body, html {
     height: 500px;
     background-position: center;
 }
+.right {
+  text-align: right;
+  opacity: 0.5;
+}
 
 .box {
     padding: 30px;

@@ -152,6 +152,8 @@ export default class SecondPage extends React.Component {
                         <p className="list-item"><a className="styled-link"><em>Tallahassee Film Festival</em></a> <br/>&ndash; 3.25.18 &ndash;</p>
                         <p className="list-item"><a className="styled-link"><em>Nevada Womens Film Festival</em></a> <br/>&ndash; 3.25.18 &ndash;</p>
                         <p className="list-item"><a className="styled-link"><em>Universe Multicultural Film Festival</em></a> <br/>&ndash; 4.7.18 &ndash;</p>
+                        <p className="list-item"><a className="styled-link"><em>IndieFEST</em></a> <br/>&ndash; 5.26.18 &ndash;</p>
+                        <p className="list-item"><a className="styled-link"><em>Accolade Global Film Competition</em></a> <br/>&ndash; 6.11.18 &ndash;</p>
                     </div>
                 </div>
                 <div className="img4">
@@ -188,6 +190,7 @@ export default class SecondPage extends React.Component {
            <a href="https://www.instagram.com/thegirlinthebluebra/" target="_blank"><i className="fab fa-instagram social-icon"></i></a>
            <a href="https://twitter.com/TGITBB" target="_blank"><i className="fab fa-twitter social-icon"></i></a></p>
                     </div>
+                    <p className="general-text right"><small>&copy; Nasser Abouelazm 2018</small></p>
                 </div>
             </div>
         )
