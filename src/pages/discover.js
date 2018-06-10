@@ -23,6 +23,7 @@ import Upcast from './upcast-logo.jpg'
 import Casting from './casting-360-logo.svg'
 import Tally from './TFF-2018-Laurels.png'
 import Delhi from './Official-Selection-Laurel.jpg'
+import Buddha from './TBIFF_Official Selection.jpg'
 
 export default class SecondPage extends React.Component {
     constructor(props) {
@@ -110,38 +111,42 @@ export default class SecondPage extends React.Component {
                     <div className="text-container">
                         <h1 className="general-title space">ACCOLADES</h1>
                         <div className="image-container">
-                            <img src={Recognition} />
+                            <img alt="Accolade Global Film Competition" src={Recognition} />
                         </div>
                         <div className="image-container">
-                            <img className="circle" src={AsiaAward} />
+                            <img alt="Asia South East Film Fesitival" className="circle" src={AsiaAward} />
                         </div>
                         <div className="image-container">
-                            <img src={IndieFest} />
+                            <img alt="IndieFEST" src={IndieFest} />
                         </div>
                         <div className="image-container">
-                            <img src={Chicago} />
+                            <img alt="Chicago Feminist Film Festival" src={Chicago} />
                         </div>
                         <div className="image-container">
-                            <img src={MultiVerse} />
+                            <img alt="Universe Multicultural Film Festival" src={MultiVerse} />
                         </div>
                         <div className="image-container">
-                            <img src={FirstFriday} />
+                            <img alt="First Friday Film Fesitival Kansas City" src={FirstFriday} />
                         </div>
                         <div className="image-container">
-                            <img src={LAWomens} />
+                            <img alt="Los Angeles Womens International Film Festival" src={LAWomens} />
                         </div>
                         <div className="image-container">
-                            <img src={Nwff} />
+                            <img alt="Nevada Womens Film Festival" src={Nwff} />
                         </div>
                         <div className="image-container">
-                            <img src={Asia} />
+                            <img alt="Asia South East Film Fesitival" src={Asia} />
                         </div>
                         <div className="image-container">
-                            <img src={Tally} />
+                            <img alt="Tallahassee Film Festival" src={Tally} />
+                        </div>
+                         <div className="image-container">
+                            <img alt="The Buddha International Film Festival" src={Buddha} />
                         </div>
                         <div className="image-container">
-                            <img className="circle" src={Delhi} />
+                            <img alt="6th Delhi International Film Festival" className="circle" src={Delhi} />
                         </div>
+
 
                         <h1 className="general-title space">SCREENINGS</h1>
                         <p className="list-item"><a className="styled-link"><em>6th Delhi International Film Festival</em></a> <br/>&ndash; 12.9.17 &ndash;</p>
@@ -153,6 +158,7 @@ export default class SecondPage extends React.Component {
                         <p className="list-item"><a className="styled-link"><em>Nevada Womens Film Festival</em></a> <br/>&ndash; 3.25.18 &ndash;</p>
                         <p className="list-item"><a className="styled-link"><em>Universe Multicultural Film Festival</em></a> <br/>&ndash; 4.7.18 &ndash;</p>
                         <p className="list-item"><a className="styled-link"><em>IndieFEST</em></a> <br/>&ndash; 5.26.18 &ndash;</p>
+                        <p className="list-item"><a className="styled-link"><em>The Buddha International Film Festival</em></a> <br/>&ndash; 6.10.18 &ndash;</p>
                         <p className="list-item"><a className="styled-link"><em>Accolade Global Film Competition</em></a> <br/>&ndash; 6.11.18 &ndash;</p>
                     </div>
                 </div>
@@ -190,7 +196,7 @@ export default class SecondPage extends React.Component {
            <a href="https://www.instagram.com/thegirlinthebluebra/" target="_blank"><i className="fab fa-instagram social-icon"></i></a>
            <a href="https://twitter.com/TGITBB" target="_blank"><i className="fab fa-twitter social-icon"></i></a></p>
                     </div>
-                    <p className="general-text right"><small>&copy; Nasser Abouelazm 2018</small></p>
+                    <p className="general-text"><small>&copy; Nasser Abouelazm 2018</small></p>
                 </div>
             </div>
         )
