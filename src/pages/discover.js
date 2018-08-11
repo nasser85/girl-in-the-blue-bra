@@ -24,6 +24,11 @@ import Casting from './casting-360-logo.svg'
 import Tally from './TFF-2018-Laurels.png'
 import Delhi from './Official-Selection-Laurel.jpg'
 import Buddha from './TBIFF_Official Selection.jpg'
+import CICFF from './CICFF_WINNER_LAUREL.jpg'
+import OneReelerShort from './One_reeler_short_competition.jpg'
+import Kinodrome from './KINODROME.jpg'
+import Westfield from './WIFF-Laurel-2018-Honorable-Mention-Black.jpg'
+import Push from './push-2018-official-selection-laurel-black-01.jpg'
 
 export default class SecondPage extends React.Component {
     constructor(props) {
@@ -145,6 +150,21 @@ export default class SecondPage extends React.Component {
                         </div>
                         <div className="image-container">
                             <img alt="6th Delhi International Film Festival" className="circle" src={Delhi} />
+                        </div>
+                        <div className="image-container">
+                            <img alt="CICFF Festival" src={CICFF} />
+                        </div>
+                         <div className="image-container">
+                            <img alt="One Reeler Short Festival" src={OneReelerShort} />
+                        </div>
+                         <div className="image-container">
+                            <img alt="Kinodrome Festival" src={Kinodrome} />
+                        </div>
+                         <div className="image-container">
+                            <img alt="Westfield Film Festival" src={Westfield} />
+                        </div>
+                         <div className="image-container">
+                            <img alt="Push Film Festival" src={Push} />
                         </div>
 
 
