@@ -42,12 +42,7 @@ export default class SecondPage extends React.Component {
         )
     }
     moveToFeature() {
-        var userAgent = window.navigator.userAgent;
-        if (userAgent.match(/Chrome/i) ) {
-          window.document.querySelector('.feature').scrollIntoView({behavior: 'smooth'});
-        } else {
-          window.document.querySelector('.img3').scrollIntoView({behavior: 'smooth'});
-        }
+        window.document.querySelector('.img3').scrollIntoView({behavior: 'smooth'});
     }
     render() {
         const crewData = [

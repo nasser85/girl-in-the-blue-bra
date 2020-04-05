@@ -80,35 +80,19 @@ export default class Header extends React.Component {
   }
   toFilm() {
     var userAgent = window.navigator.userAgent;
-    if (userAgent.match(/Chrome/i) ) {
-      this.scrollTo('film');
-    } else {
-      window.document.querySelector('.img1').scrollIntoView({behavior: 'smooth'});
-    }
+    window.document.querySelector('.img1').scrollIntoView({behavior: 'smooth'});
   }
   toCircuit() {
     var userAgent = window.navigator.userAgent;
-    if (userAgent.match(/Chrome/i) ) {
-      this.scrollTo('circuit');
-    } else {
-      window.document.querySelector('.img2').scrollIntoView({behavior: 'smooth'});
-    }
+    window.document.querySelector('.img2').scrollIntoView({behavior: 'smooth'});
   }
   toCast() {
     var userAgent = window.navigator.userAgent;
-    if (userAgent.match(/Chrome/i) ) {
-      this.scrollTo('cast');
-    } else {
-      window.document.querySelector('.img4').scrollIntoView({behavior: 'smooth'});
-    }
+    window.document.querySelector('.img4').scrollIntoView({behavior: 'smooth'});
   }
   toFeature() {
     var userAgent = window.navigator.userAgent;
-    if (userAgent.match(/Chrome/i) ) {
-      this.scrollTo('feature');
-    } else {
-      window.document.querySelector('.img3').scrollIntoView({behavior: 'smooth'});
-    }
+    window.document.querySelector('.img3').scrollIntoView({behavior: 'smooth'});
   }
   renderFrontNav() {
     return (
